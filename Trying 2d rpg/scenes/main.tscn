@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://cqow47bch5ocs"]
 
-[ext_resource type="Texture2D" uid="uid://cgrfxcevss0hw" path="res://background.jpeg" id="1_ig7tw"]
-[ext_resource type="Script" uid="uid://dqb7xp775y7bg" path="res://quit.gd" id="2_0xm2m"]
-[ext_resource type="Script" uid="uid://dj2jowr4at3rv" path="res://play.gd" id="2_h2yge"]
+[ext_resource type="Texture2D" uid="uid://cgrfxcevss0hw" path="res://scenes/background.jpeg" id="1_sugp2"]
+[ext_resource type="Script" uid="uid://dj2jowr4at3rv" path="res://scripts/play.gd" id="2_jyhfs"]
+[ext_resource type="Script" uid="uid://dqb7xp775y7bg" path="res://scripts/quit.gd" id="3_sugp2"]
 
 [node name="main" type="Node2D" unique_id=759789505]
 
@@ -11,7 +11,7 @@
 [node name="Background" type="Sprite2D" parent="ParallaxBackground" unique_id=939511698]
 position = Vector2(576.5, 323.5)
 scale = Vector2(1.6951399, 1.4377779)
-texture = ExtResource("1_ig7tw")
+texture = ExtResource("1_sugp2")
 
 [node name="about" type="RichTextLabel" parent="." unique_id=1112809386]
 offset_left = 311.0
@@ -45,7 +45,7 @@ offset_top = 267.0
 offset_right = 850.0
 offset_bottom = 354.0
 flat = true
-script = ExtResource("2_h2yge")
+script = ExtResource("2_jyhfs")
 
 [node name="quit" type="Button" parent="." unique_id=1203725888]
 offset_left = 268.0
@@ -53,7 +53,7 @@ offset_top = 259.0
 offset_right = 413.0
 offset_bottom = 349.0
 flat = true
-script = ExtResource("2_0xm2m")
+script = ExtResource("3_sugp2")
 
 [connection signal="pressed" from="play" to="play" method="_on_pressed"]
 [connection signal="pressed" from="quit" to="quit" method="_on_pressed"]

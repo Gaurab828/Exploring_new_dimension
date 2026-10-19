@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cgrfxcevss0hw"
-path="res://.godot/imported/background.jpeg-be6c286ea44757dbaec3ca2ae42e1cdc.ctex"
+uid="uid://corxee0xnpsgk"
+path="res://.godot/imported/run2.png-169bf887c58d28b56365f7952a6f3bde.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://background.jpeg"
-dest_files=["res://.godot/imported/background.jpeg-be6c286ea44757dbaec3ca2ae42e1cdc.ctex"]
+source_file="res://character/garou/run2.png"
+dest_files=["res://.godot/imported/run2.png-169bf887c58d28b56365f7952a6f3bde.ctex"]
 
 [params]
 
