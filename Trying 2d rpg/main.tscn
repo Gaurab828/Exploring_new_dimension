@@ -1,0 +1,59 @@
+[gd_scene format=3 uid="uid://cqow47bch5ocs"]
+
+[ext_resource type="Texture2D" uid="uid://cgrfxcevss0hw" path="res://background.jpeg" id="1_ig7tw"]
+[ext_resource type="Script" uid="uid://dqb7xp775y7bg" path="res://quit.gd" id="2_0xm2m"]
+[ext_resource type="Script" uid="uid://dj2jowr4at3rv" path="res://play.gd" id="2_h2yge"]
+
+[node name="main" type="Node2D" unique_id=759789505]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="." unique_id=1367162531]
+
+[node name="Background" type="Sprite2D" parent="ParallaxBackground" unique_id=939511698]
+position = Vector2(576.5, 323.5)
+scale = Vector2(1.6951399, 1.4377779)
+texture = ExtResource("1_ig7tw")
+
+[node name="about" type="RichTextLabel" parent="." unique_id=1112809386]
+offset_left = 311.0
+offset_top = 80.0
+offset_right = 738.0
+offset_bottom = 184.0
+bbcode_enabled = true
+text = "[center]Welcome!!
+Do you want to explore a problem by being in it?
+[b]-100 prisoner problem[/b][center]Problem is shrunk to 10 but odds are remotely similar"
+
+[node name="quit_text" type="RichTextLabel" parent="." unique_id=722766454]
+offset_left = 280.0
+offset_top = 260.0
+offset_right = 411.0
+offset_bottom = 303.0
+bbcode_enabled = true
+text = "[b]Not Interested"
+
+[node name="play_text" type="RichTextLabel" parent="." unique_id=1427439648]
+offset_left = 769.0
+offset_top = 267.0
+offset_right = 812.0
+offset_bottom = 297.0
+bbcode_enabled = true
+text = "[b]Sure "
+
+[node name="play" type="Button" parent="." unique_id=227142856]
+offset_left = 733.0
+offset_top = 267.0
+offset_right = 850.0
+offset_bottom = 354.0
+flat = true
+script = ExtResource("2_h2yge")
+
+[node name="quit" type="Button" parent="." unique_id=1203725888]
+offset_left = 268.0
+offset_top = 259.0
+offset_right = 413.0
+offset_bottom = 349.0
+flat = true
+script = ExtResource("2_0xm2m")
+
+[connection signal="pressed" from="play" to="play" method="_on_pressed"]
+[connection signal="pressed" from="quit" to="quit" method="_on_pressed"]
