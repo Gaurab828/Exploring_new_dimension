@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://cd1ej6u733ei1"]
+
+[ext_resource type="Texture2D" uid="uid://c5wtmdld8ppeg" path="res://Halloween Characters/Vampire/Png_animation/Vampire1.png" id="1_luxr3"]
+[ext_resource type="Texture2D" uid="uid://devmoh5jbdwua" path="res://Halloween Characters/Vampire/Png_animation/Vampire2.png" id="2_0jglr"]
+[ext_resource type="Texture2D" uid="uid://mh2j32gxu3vb" path="res://Halloween Characters/Vampire/Png_animation/Vampire3.png" id="3_x65tw"]
+[ext_resource type="Texture2D" uid="uid://bcsqtwexd7fo1" path="res://Halloween Characters/Vampire/Png_animation/Vampire4.png" id="4_dpnmv"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_4otcc"]
+radius = 15.0
+height = 52.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ig4if"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_luxr3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_0jglr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_x65tw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_dpnmv")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Area2D" type="Area2D" unique_id=356314944]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1267483087]
+shape = SubResource("CapsuleShape2D_4otcc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=937067942]
+sprite_frames = SubResource("SpriteFrames_ig4if")
+autoplay = "default"

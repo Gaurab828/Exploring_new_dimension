@@ -1,3 +1,50 @@
 [gd_scene format=3 uid="uid://ckavqb25bdaul"]
 
+[ext_resource type="PackedScene" uid="uid://cay2rojxbr5my" path="res://scenes/player_1.tscn" id="1_nnsk1"]
+[ext_resource type="PackedScene" uid="uid://c5urc8nywgir0" path="res://scenes/player_2.tscn" id="2_rwgxs"]
+[ext_resource type="PackedScene" uid="uid://u1pmv73g5a7d" path="res://scenes/player_3.tscn" id="3_4wyf3"]
+[ext_resource type="PackedScene" uid="uid://b03uglxbbftpp" path="res://scenes/player_4.tscn" id="4_k0juu"]
+[ext_resource type="PackedScene" uid="uid://dq63i3y5hwq7g" path="res://scenes/player_5.tscn" id="5_71j4m"]
+[ext_resource type="PackedScene" uid="uid://cm77u6cxnqgsy" path="res://scenes/player_6.tscn" id="6_qfnet"]
+[ext_resource type="PackedScene" uid="uid://h5yiace7snry" path="res://scenes/player_7.tscn" id="7_i7141"]
+[ext_resource type="PackedScene" uid="uid://bmm8j3vr7l28o" path="res://scenes/player_8.tscn" id="8_4mrxx"]
+[ext_resource type="PackedScene" uid="uid://bwjwewtx72v36" path="res://scenes/player_9.tscn" id="9_7r4gi"]
+[ext_resource type="PackedScene" uid="uid://xohg6cjfybgi" path="res://scenes/player_10.tscn" id="10_w7kh3"]
+[ext_resource type="PackedScene" uid="uid://b50e22bec76ec" path="res://scenes/chest_1.tscn" id="11_e3hyu"]
+
 [node name="world" type="Node2D" unique_id=1121479654]
+
+[node name="character" type="Node" parent="." unique_id=1670115030]
+
+[node name="Doc" parent="character" unique_id=1118077405 instance=ExtResource("2_rwgxs")]
+position = Vector2(223, 120)
+
+[node name="gyutro" parent="character" unique_id=1799009046 instance=ExtResource("3_4wyf3")]
+position = Vector2(335, 127)
+
+[node name="Garou" parent="character" unique_id=1551765677 instance=ExtResource("4_k0juu")]
+position = Vector2(463, 139)
+
+[node name="halo" parent="character" unique_id=1873987703 instance=ExtResource("5_71j4m")]
+position = Vector2(576, 146)
+
+[node name="uncanny" parent="character" unique_id=892835450 instance=ExtResource("6_qfnet")]
+position = Vector2(125, 395)
+
+[node name="panda_man" parent="character" unique_id=980927291 instance=ExtResource("7_i7141")]
+position = Vector2(251, 394)
+
+[node name="pilot" parent="character" unique_id=1225475993 instance=ExtResource("8_4mrxx")]
+position = Vector2(395, 412)
+
+[node name="shadow" parent="character" unique_id=1101427532 instance=ExtResource("9_7r4gi")]
+position = Vector2(507, 408)
+
+[node name="messyart" parent="character" unique_id=677175286 instance=ExtResource("10_w7kh3")]
+position = Vector2(632, 408)
+
+[node name="chest" parent="character" unique_id=183698565 instance=ExtResource("11_e3hyu")]
+position = Vector2(705, 184)
+
+[node name="bunny" parent="." unique_id=1262958537 instance=ExtResource("1_nnsk1")]
+position = Vector2(107, 124)

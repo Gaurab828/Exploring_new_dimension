@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://dkgt46m7ynsu0"]
+
+[ext_resource type="Texture2D" uid="uid://gvntu1bf8ef8" path="res://Halloween Characters/jack o lantern/Png_animation/Jack o latern1.png" id="1_gsdfu"]
+[ext_resource type="Texture2D" uid="uid://codkkmaknxmj1" path="res://Halloween Characters/jack o lantern/Png_animation/Jack o latern2.png" id="2_0vaar"]
+[ext_resource type="Texture2D" uid="uid://c8awoca7ibc8e" path="res://Halloween Characters/jack o lantern/Png_animation/Jack o latern3.png" id="3_ai52x"]
+[ext_resource type="Texture2D" uid="uid://dxax2dq1708fu" path="res://Halloween Characters/jack o lantern/Png_animation/Jack o latern4.png" id="4_7f56m"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_4otcc"]
+radius = 15.0
+height = 52.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ig4if"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_gsdfu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_0vaar")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ai52x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_7f56m")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Area2D" type="Area2D" unique_id=356314944]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1267483087]
+shape = SubResource("CapsuleShape2D_4otcc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=937067942]
+sprite_frames = SubResource("SpriteFrames_ig4if")
+autoplay = "default"

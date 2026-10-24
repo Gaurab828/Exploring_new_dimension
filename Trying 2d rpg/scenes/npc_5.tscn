@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://6kj86kwxnog7"]
+
+[ext_resource type="Texture2D" uid="uid://dq60602ra5fnf" path="res://Halloween Characters/Werewolf/Png_animation/Werewolf1.png" id="1_h64tt"]
+[ext_resource type="Texture2D" uid="uid://b3bqgy6e2htge" path="res://Halloween Characters/Werewolf/Png_animation/Werewolf2.png" id="2_6xqlo"]
+[ext_resource type="Texture2D" uid="uid://br6napfimf65s" path="res://Halloween Characters/Werewolf/Png_animation/Werewolf3.png" id="3_pnlig"]
+[ext_resource type="Texture2D" uid="uid://dypgrqal263lt" path="res://Halloween Characters/Werewolf/Png_animation/Werewolf4.png" id="4_ljuxu"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_4otcc"]
+radius = 15.0
+height = 52.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ig4if"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_h64tt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_6xqlo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_pnlig")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ljuxu")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Area2D" type="Area2D" unique_id=356314944]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1267483087]
+shape = SubResource("CapsuleShape2D_4otcc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=937067942]
+sprite_frames = SubResource("SpriteFrames_ig4if")
+autoplay = "default"

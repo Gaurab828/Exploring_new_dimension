@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://dmpkpog2pyxfw"]
+
+[ext_resource type="Texture2D" uid="uid://gqgjsix1cd38" path="res://Halloween Characters/Ghost/Png_animation/Ghost1.png" id="1_qchs1"]
+[ext_resource type="Texture2D" uid="uid://bl87sexrfgren" path="res://Halloween Characters/Ghost/Png_animation/Ghost2.png" id="2_362ta"]
+[ext_resource type="Texture2D" uid="uid://bqbu0ruopx1o" path="res://Halloween Characters/Ghost/Png_animation/Ghost3.png" id="3_2dwi7"]
+[ext_resource type="Texture2D" uid="uid://ci8y0mdrph6pd" path="res://Halloween Characters/Ghost/Png_animation/Ghost4.png" id="4_288er"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_4otcc"]
+radius = 15.0
+height = 52.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ig4if"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_qchs1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_362ta")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_2dwi7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_288er")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Area2D" type="Area2D" unique_id=356314944]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1267483087]
+shape = SubResource("CapsuleShape2D_4otcc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=937067942]
+sprite_frames = SubResource("SpriteFrames_ig4if")
+autoplay = "default"

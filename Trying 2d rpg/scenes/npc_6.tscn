@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://d3yt38r352nhe"]
+
+[ext_resource type="Texture2D" uid="uid://c2x7aut6fq2bb" path="res://Halloween Characters/Witch/Png_animation/Witch1.png" id="1_uyfub"]
+[ext_resource type="Texture2D" uid="uid://8n5s7b0fkmo3" path="res://Halloween Characters/Witch/Png_animation/Witch2.png" id="2_nm8c3"]
+[ext_resource type="Texture2D" uid="uid://bni34fsyorftw" path="res://Halloween Characters/Witch/Png_animation/Witch3.png" id="3_v506c"]
+[ext_resource type="Texture2D" uid="uid://cdcs2uquudbq1" path="res://Halloween Characters/Witch/Png_animation/Witch4.png" id="4_o6q6g"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_4otcc"]
+radius = 15.0
+height = 52.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ig4if"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_uyfub")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_nm8c3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_v506c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_o6q6g")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Area2D" type="Area2D" unique_id=356314944]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1267483087]
+shape = SubResource("CapsuleShape2D_4otcc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=937067942]
+sprite_frames = SubResource("SpriteFrames_ig4if")
+autoplay = "default"
