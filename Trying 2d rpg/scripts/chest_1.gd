@@ -6,14 +6,6 @@ extends Node2D
 var player_near = false
 var opened = false
 #":=" it strictly locks the data-type stored by a variable
-func _ready() -> void:
-	pass
-
-
-func _process(delta: float) -> void:
-	pass
-
-
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	if body.name == "bunny" and not opened:
 		player_near = true

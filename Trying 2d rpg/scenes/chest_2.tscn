@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://wqiwyd2csuyj"]
+
+[ext_resource type="Script" uid="uid://chnv7mru55i3m" path="res://scripts/chest_2.gd" id="1_n1bxa"]
+[ext_resource type="Texture2D" uid="uid://mdj8glmlvin8" path="res://19.07c - Treasure Chests 1.2a/treasure chests.png" id="2_4hqv5"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4otcc"]
+radius = 57.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4hqv5"]
+atlas = ExtResource("2_4hqv5")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uq14v"]
+atlas = ExtResource("2_4hqv5")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ig4if"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4hqv5")
+}],
+"loop": 1,
+"name": &"closed",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uq14v")
+}],
+"loop": 1,
+"name": &"open",
+"speed": 1.0
+}]
+
+[node name="chest" type="Node2D" unique_id=183698565]
+script = ExtResource("1_n1bxa")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=757930193]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1016114982]
+shape = SubResource("CircleShape2D_4otcc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=912581381]
+position = Vector2(-9.536743e-07, 0)
+scale = Vector2(2.34375, 2.1875)
+sprite_frames = SubResource("SpriteFrames_ig4if")
+animation = &"open"
+autoplay = "closed"
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
+[connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]
