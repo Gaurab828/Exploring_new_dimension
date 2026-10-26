@@ -6,8 +6,8 @@
 [ext_resource type="Texture2D" uid="uid://bhjpc0i0m724m" path="res://character/gyutaro/walk.png" id="3_dcfnw"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ig4if"]
-radius = 35.0
-height = 168.0
+radius = 12.0
+height = 48.0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_52xr7"]
 atlas = ExtResource("1_qougw")
@@ -99,7 +99,15 @@ script = ExtResource("1_yehgd")
 shape = SubResource("CapsuleShape2D_ig4if")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1269560391]
-position = Vector2(1, -1.0000005)
-scale = Vector2(0.6375839, 0.64833325)
+position = Vector2(-2.3841858e-07, -0.4999987)
+scale = Vector2(0.16759777, 0.23666665)
 sprite_frames = SubResource("SpriteFrames_4otcc")
 animation = &"run"
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1221251296]
+zoom = Vector2(2, 2)
+limit_left = -15
+limit_top = -59
+limit_right = 1152
+limit_bottom = 641
+position_smoothing_enabled = true

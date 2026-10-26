@@ -1,0 +1,87 @@
+[gd_scene format=3 uid="uid://dlh8o12gcsdvq"]
+
+[ext_resource type="Texture2D" uid="uid://ckyf6sgno3xvd" path="res://character/pilot/idle.png" id="2_g682m"]
+[ext_resource type="Texture2D" uid="uid://cppn0kpqlfoy4" path="res://character/pilot/run.png" id="3_4bu2n"]
+[ext_resource type="Texture2D" uid="uid://bcmmr80dnevy5" path="res://character/pilot/walk.png" id="4_y25f3"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ig4if"]
+radius = 9.0
+height = 46.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qpowa"]
+atlas = ExtResource("2_g682m")
+region = Rect2(0, 0, 298, 600)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f08cf"]
+atlas = ExtResource("3_4bu2n")
+region = Rect2(33, 600, 224, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kqt0n"]
+atlas = ExtResource("3_4bu2n")
+region = Rect2(248, 600, 224, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j4vqd"]
+atlas = ExtResource("3_4bu2n")
+region = Rect2(453, 600, 224, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_501tp"]
+atlas = ExtResource("3_4bu2n")
+region = Rect2(672, 600, 224, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xifkx"]
+atlas = ExtResource("4_y25f3")
+region = Rect2(298, 0, 298, 600)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qvrja"]
+atlas = ExtResource("4_y25f3")
+region = Rect2(596, 0, 298, 600)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4otcc"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qpowa")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f08cf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kqt0n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j4vqd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_501tp")
+}],
+"loop": 1,
+"name": &"run",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xifkx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qvrja")
+}],
+"loop": 1,
+"name": &"walk",
+"speed": 5.0
+}]
+
+[node name="pilot" type="CharacterBody2D" unique_id=1262958537]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=985692739]
+shape = SubResource("CapsuleShape2D_ig4if")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1269560391]
+position = Vector2(0.4999988, 0.5000012)
+scale = Vector2(0.09731543, 0.095)
+sprite_frames = SubResource("SpriteFrames_4otcc")
+animation = &"walk"

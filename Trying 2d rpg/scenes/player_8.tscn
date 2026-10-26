@@ -6,8 +6,8 @@
 [ext_resource type="Texture2D" uid="uid://bcmmr80dnevy5" path="res://character/pilot/walk.png" id="3_jy7ox"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ig4if"]
-radius = 35.0
-height = 168.0
+radius = 9.0
+height = 46.0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qpowa"]
 atlas = ExtResource("1_yj774")
@@ -83,7 +83,15 @@ script = ExtResource("1_qcfft")
 shape = SubResource("CapsuleShape2D_ig4if")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1269560391]
-position = Vector2(-0.4999962, -0.9999962)
-scale = Vector2(0.3590604, 0.37000003)
+position = Vector2(0.4999988, 0.5000012)
+scale = Vector2(0.09731543, 0.095)
 sprite_frames = SubResource("SpriteFrames_4otcc")
 animation = &"walk"
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=5340880]
+zoom = Vector2(2, 2)
+limit_left = -15
+limit_top = -59
+limit_right = 1152
+limit_bottom = 641
+position_smoothing_enabled = true

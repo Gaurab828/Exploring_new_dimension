@@ -5,8 +5,8 @@
 [ext_resource type="Script" uid="uid://c36d2yowk0akq" path="res://scripts/player_6.gd" id="3_wae8w"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ig4if"]
-radius = 35.0
-height = 168.0
+radius = 9.0
+height = 28.0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ng57b"]
 atlas = ExtResource("1_dyse1")
@@ -196,7 +196,14 @@ script = ExtResource("3_wae8w")
 shape = SubResource("CapsuleShape2D_ig4if")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1269560391]
-position = Vector2(1, -1.0000005)
-scale = Vector2(0.6375839, 0.64833325)
+position = Vector2(0.50000036, 1.1920929e-07)
+scale = Vector2(0.25892857, 0.2638889)
 sprite_frames = SubResource("SpriteFrames_4otcc")
 animation = &"idle"
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=325591411]
+zoom = Vector2(2, 2)
+limit_left = -15
+limit_top = -59
+limit_right = 1152
+limit_bottom = 641

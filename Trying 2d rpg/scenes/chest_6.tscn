@@ -42,8 +42,8 @@ script = ExtResource("1_m50sl")
 shape = SubResource("CircleShape2D_4otcc")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=912581381]
-position = Vector2(-9.536743e-07, 0)
-scale = Vector2(2.34375, 2.1875)
+position = Vector2(-9.536743e-07, 1.5497208e-06)
+scale = Vector2(1.2499999, 1.125)
 sprite_frames = SubResource("SpriteFrames_ig4if")
 animation = &"open"
 autoplay = "closed"

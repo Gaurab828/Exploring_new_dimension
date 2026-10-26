@@ -6,8 +6,8 @@
 [ext_resource type="Texture2D" uid="uid://d3m16b18uxg3g" path="res://character/vibrant man/walk.png" id="4_qdrom"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ig4if"]
-radius = 35.0
-height = 168.0
+radius = 7.0
+height = 54.0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ycjme"]
 atlas = ExtResource("2_32ff2")
@@ -111,7 +111,14 @@ script = ExtResource("1_32ff2")
 shape = SubResource("CapsuleShape2D_ig4if")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1269560391]
-position = Vector2(-1.1920929e-07, 0)
-scale = Vector2(0.5472973, 0.53000003)
+position = Vector2(-1.0728836e-06, 2.5629997e-06)
+scale = Vector2(0.24324322, 0.28)
 sprite_frames = SubResource("SpriteFrames_4otcc")
 animation = &"walk"
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=933510015]
+zoom = Vector2(2, 2)
+limit_left = -15
+limit_top = -59
+limit_right = 1152
+limit_bottom = 641

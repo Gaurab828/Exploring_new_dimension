@@ -6,8 +6,8 @@
 [ext_resource type="Texture2D" uid="uid://ccp1jkxajhxfm" path="res://character/halo stickman/walk.png" id="3_lfvud"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ig4if"]
-radius = 35.0
-height = 168.0
+radius = 6.0
+height = 44.0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_nifxh"]
 atlas = ExtResource("1_xqxm8")
@@ -167,7 +167,15 @@ script = ExtResource("1_abcro")
 shape = SubResource("CapsuleShape2D_ig4if")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1269560391]
-position = Vector2(1, -1.0000005)
-scale = Vector2(0.6375839, 0.64833325)
+position = Vector2(1.1368684e-13, 1.9073486e-06)
+scale = Vector2(0.2684564, 0.32333332)
 sprite_frames = SubResource("SpriteFrames_4otcc")
 animation = &"idle"
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=2087534497]
+zoom = Vector2(2, 2)
+limit_left = -15
+limit_top = -59
+limit_right = 1152
+limit_bottom = 641
+position_smoothing_enabled = true

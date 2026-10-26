@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://mdj8glmlvin8" path="res://19.07c - Treasure Chests 1.2a/treasure chests.png" id="2_mc5nh"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_4otcc"]
-radius = 57.0
+radius = 65.0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4rpjy"]
 atlas = ExtResource("2_mc5nh")
@@ -43,7 +43,7 @@ shape = SubResource("CircleShape2D_4otcc")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=912581381]
 position = Vector2(-9.536743e-07, 0)
-scale = Vector2(2.34375, 2.1875)
+scale = Vector2(1.2499999, 1)
 sprite_frames = SubResource("SpriteFrames_ig4if")
 animation = &"open"
 autoplay = "closed"

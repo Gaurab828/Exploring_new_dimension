@@ -10,8 +10,8 @@
 [ext_resource type="Texture2D" uid="uid://b5evqdbehe4oh" path="res://character/panda man/walk.png" id="7_edto4"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ig4if"]
-radius = 35.0
-height = 168.0
+radius = 13.0
+height = 56.0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_dfugp"]
 atlas = ExtResource("1_8nxgt")
@@ -122,7 +122,15 @@ script = ExtResource("1_takxm")
 shape = SubResource("CapsuleShape2D_ig4if")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1269560391]
-position = Vector2(1, -1.0000005)
-scale = Vector2(0.6375839, 0.64833325)
+position = Vector2(1.4603138e-06, -1.9073486e-06)
+scale = Vector2(0.25503355, 0.22307691)
 sprite_frames = SubResource("SpriteFrames_4otcc")
 animation = &"walk"
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1779371681]
+zoom = Vector2(2, 2)
+limit_left = -15
+limit_top = -59
+limit_right = 1152
+limit_bottom = 641
+position_smoothing_enabled = true

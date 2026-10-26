@@ -13,8 +13,8 @@
 [ext_resource type="Texture2D" uid="uid://d0ehnottsugrx" path="res://character/garou/walk.png" id="11_xrs2v"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ig4if"]
-radius = 35.0
-height = 168.0
+radius = 9.0
+height = 36.0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_q7neb"]
 atlas = ExtResource("2_hyas7")
@@ -167,7 +167,15 @@ script = ExtResource("1_3tie1")
 shape = SubResource("CapsuleShape2D_ig4if")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1269560391]
-position = Vector2(1, -1.0000005)
-scale = Vector2(0.6375839, 0.64833325)
+position = Vector2(0.49999785, -2.3841858e-07)
+scale = Vector2(0.12888888, 0.25498006)
 sprite_frames = SubResource("SpriteFrames_4otcc")
 animation = &"run"
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1938877124]
+zoom = Vector2(2, 2)
+limit_left = -14
+limit_top = -58
+limit_right = 1153
+limit_bottom = 642
+position_smoothing_enabled = true
