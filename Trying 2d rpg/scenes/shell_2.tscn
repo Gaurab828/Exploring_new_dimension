@@ -152,4 +152,5 @@ shape = SubResource("CapsuleShape2D_ig4if")
 position = Vector2(0, 1.4305115e-06)
 scale = Vector2(0.20134227, 0.21333334)
 sprite_frames = SubResource("SpriteFrames_4otcc")
-animation = &"walk"
+animation = &"idle"
+autoplay = "idle"

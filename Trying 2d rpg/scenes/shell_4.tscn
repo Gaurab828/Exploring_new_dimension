@@ -165,7 +165,8 @@ animations = [{
 shape = SubResource("CapsuleShape2D_ig4if")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1269560391]
-position = Vector2(0.49999785, -2.3841858e-07)
-scale = Vector2(0.12888888, 0.25498006)
+position = Vector2(-1.1920929e-07, 0.49999762)
+scale = Vector2(0.15178572, 0.23666665)
 sprite_frames = SubResource("SpriteFrames_4otcc")
-animation = &"run"
+animation = &"idle"
+autoplay = "idle"

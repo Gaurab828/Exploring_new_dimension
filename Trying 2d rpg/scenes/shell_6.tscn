@@ -198,3 +198,4 @@ position = Vector2(0.50000036, 1.1920929e-07)
 scale = Vector2(0.25892857, 0.2638889)
 sprite_frames = SubResource("SpriteFrames_4otcc")
 animation = &"idle"
+autoplay = "idle"
