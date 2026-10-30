@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://xohg6cjfybgi"]
 
-[ext_resource type="Script" uid="uid://d2romfqameboi" path="res://scripts/player_10.gd" id="1_32ff2"]
+[ext_resource type="Script" uid="uid://d2romfqameboi" path="res://scripts/player_0.gd" id="1_32ff2"]
 [ext_resource type="Texture2D" uid="uid://ox3tqkanm22e" path="res://character/vibrant man/idle.png" id="2_32ff2"]
 [ext_resource type="Texture2D" uid="uid://bvgcdrwhjgidr" path="res://character/vibrant man/run.png" id="3_mum0r"]
 [ext_resource type="Texture2D" uid="uid://d3m16b18uxg3g" path="res://character/vibrant man/walk.png" id="4_qdrom"]

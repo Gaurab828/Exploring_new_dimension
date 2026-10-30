@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dusihtc2ypfpx"]
 
-[ext_resource type="Script" uid="uid://k4jbe37mi8sg" path="res://scripts/chest_10.gd" id="1_c1wuj"]
+[ext_resource type="Script" uid="uid://k4jbe37mi8sg" path="res://scripts/chest_0.gd" id="1_c1wuj"]
 [ext_resource type="Texture2D" uid="uid://mdj8glmlvin8" path="res://19.07c - Treasure Chests 1.2a/treasure chests.png" id="2_vgb10"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_4otcc"]

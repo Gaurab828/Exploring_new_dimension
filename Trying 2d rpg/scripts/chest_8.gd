@@ -3,6 +3,7 @@ extends Node2D
 @onready var area = $Area2D
 var player_near = false
 var opened = false
+@onready var label=$"../../no_inside_chest/Label8"
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	if body.is_in_group("player") and not opened:
 		player_near = true
@@ -23,4 +24,5 @@ func _on_area_2d_input_event(_viewport: Node, event: InputEvent, _shape_idx: int
 func try_open():
 	if player_near and not opened:
 		opened=true
+		label.visible=true
 		sprite.play("open")
