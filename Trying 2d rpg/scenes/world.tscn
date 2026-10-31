@@ -6,7 +6,9 @@
 [ext_resource type="PackedScene" uid="uid://c5gk0fy334y5j" path="res://scenes/chest_3.tscn" id="13_jhx03"]
 [ext_resource type="PackedScene" uid="uid://drmy3tbv5myv7" path="res://scenes/chest_5.tscn" id="15_7iits"]
 [ext_resource type="PackedScene" uid="uid://dgf64nu3ebdr7" path="res://scenes/chest_7.tscn" id="16_oo54l"]
+[ext_resource type="Script" uid="uid://bs4qweigb1x30" path="res://scripts/chest_label.gd" id="17_4kbfs"]
 [ext_resource type="PackedScene" uid="uid://c2odgm6ug08ya" path="res://scenes/chest_6.tscn" id="17_kpybi"]
+[ext_resource type="Script" uid="uid://ba6s20kyruo6o" path="res://scripts/no_inside_chest.gd" id="17_rup4s"]
 [ext_resource type="PackedScene" uid="uid://gvhwxtqadh2g" path="res://scenes/chest_8.tscn" id="18_ctatt"]
 [ext_resource type="PackedScene" uid="uid://3hbg5rb0n7n2" path="res://scenes/chest_9.tscn" id="19_xgqkh"]
 [ext_resource type="PackedScene" uid="uid://dusihtc2ypfpx" path="res://scenes/chest_10.tscn" id="20_munwf"]
@@ -17826,6 +17828,7 @@ position = Vector2(928, 493)
 position = Vector2(1056, 492)
 
 [node name="chest_label" type="Node" parent="." unique_id=1441971811]
+script = ExtResource("17_4kbfs")
 
 [node name="Label1" type="Label" parent="chest_label" unique_id=1573618895]
 offset_left = 578.0
@@ -17908,6 +17911,7 @@ text = "6"
 horizontal_alignment = 1
 
 [node name="no_inside_chest" type="Node" parent="." unique_id=667521958]
+script = ExtResource("17_rup4s")
 
 [node name="Label" type="Label" parent="no_inside_chest" unique_id=588016908]
 visible = false

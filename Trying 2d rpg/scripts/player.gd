@@ -1,6 +1,22 @@
 extends CharacterBody2D
 var speed = 200
-var a="6"
+var player_id=1
+var z=[11,11,11,11,11,11,11,11,11,11]
+var a=str(player_id)
+var x=0
+@onready var label_list=[$"../../no_inside_chest/Label",$"../../no_inside_chest/Label0",$"../../no_inside_chest/Label2",$"../../no_inside_chest/Label3",$"../../no_inside_chest/Label4",$"../../no_inside_chest/Label5",$"../../no_inside_chest/Label6",$"../../no_inside_chest/Label7",$"../../no_inside_chest/Label8",$"../../no_inside_chest/Label9"]
+
+func _process(_delta: float) -> void:
+	if x!=5:
+		for i in range(10):
+			if label_list[i].visible==true and z[i]!=i:
+				z[i]=i
+				x+=1
+				if label_list[i].text==a:
+					queue_free()
+	else:
+		queue_free()
+
 func _ready() -> void:
 	get_node("AnimatedSprite2D").play("idle"+a)
 	add_to_group("player")
