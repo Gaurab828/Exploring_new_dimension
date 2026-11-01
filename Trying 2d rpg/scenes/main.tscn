@@ -4,6 +4,20 @@
 [ext_resource type="Script" uid="uid://dj2jowr4at3rv" path="res://scripts/play.gd" id="2_jyhfs"]
 [ext_resource type="Script" uid="uid://dqb7xp775y7bg" path="res://scripts/quit.gd" id="3_sugp2"]
 
+[sub_resource type="GDScript" id="GDScript_tbgi4"]
+script/source = "extends Label
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(_delta: float) -> void:
+	pass
+"
+
 [node name="main" type="Node2D" unique_id=759789505]
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="." unique_id=1367162531]
@@ -54,6 +68,16 @@ offset_right = 413.0
 offset_bottom = 349.0
 flat = true
 script = ExtResource("3_sugp2")
+
+[node name="Label" type="Label" parent="." unique_id=754351933]
+visible = false
+offset_left = 561.0
+offset_top = 489.0
+offset_right = 601.0
+offset_bottom = 512.0
+text = "1"
+horizontal_alignment = 1
+script = SubResource("GDScript_tbgi4")
 
 [connection signal="pressed" from="play" to="play" method="_on_pressed"]
 [connection signal="pressed" from="quit" to="quit" method="_on_pressed"]

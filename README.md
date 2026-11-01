@@ -14,3 +14,4 @@ well I am not very creative person first thought that came to my mind i painted 
 credits::Limezu.itch.io and szadiart.itch.io for building asset 
 seliel-the-shaper.itch.io for the chest asset
 ismartal.itch.io for halloween characters(npc)
+ThaleahFat for font
