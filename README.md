@@ -1,3 +1,6 @@
+<img width="574" height="303" alt="Screen Shot 2026-10-31 at 9 31 09 PM" src="https://github.com/user-attachments/assets/e7c84bc6-ef41-4fc1-98f6-d95fc7156e85" />
+<img width="754" height="325" alt="Screen Shot 2026-10-26 at 7 03 02 AM" src="https://github.com/user-attachments/assets/f50e8ccd-b628-43af-a3dd-6fed9474af92" />
+
 How to play?
 awsd and arrow keys for movement and mouse right click for opening chest
 what is this?
