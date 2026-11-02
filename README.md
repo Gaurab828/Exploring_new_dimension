@@ -10,7 +10,7 @@ Why some sprites are small and some big?
 I painted rough diagram and asked gemini to sharpen image and create sprites (Why does it create jpeg image with complex background)
 I have seen these characters somewhere!
 well I am not very creative person first thought that came to my mind i painted it 
-!!!! The game is not completed yet!!!
+!!!! The game is in prototype phase !!!! test in ----https://gaurab-pandey.itch.io/escape-from-ghost
 credits::Limezu.itch.io and szadiart.itch.io for building asset 
 seliel-the-shaper.itch.io for the chest asset
 ismartal.itch.io for halloween characters(npc)

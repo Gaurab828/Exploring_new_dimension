@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://cr5qesh66g83x"]
+
+[ext_resource type="Texture2D" uid="uid://c65d4yk0486do" path="res://images.png" id="1_sb42k"]
+[ext_resource type="Script" uid="uid://wg8ru1vjybw8" path="res://dialouge/dialouge.gd" id="1_vgelm"]
+
+[node name="dialouge" type="Control" unique_id=952451667]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 83.0
+offset_top = 75.0
+offset_right = 139.0
+offset_bottom = 97.0
+script = ExtResource("1_vgelm")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="." unique_id=1648800465]
+layout_mode = 0
+offset_left = -30.0
+offset_top = -24.0
+offset_right = 73.0
+offset_bottom = 58.0
+texture = ExtResource("1_sb42k")
+
+[node name="main" type="RichTextLabel" parent="NinePatchRect" unique_id=1285287277]
+layout_mode = 0
+offset_left = 17.398823
+offset_top = 22.054398
+offset_right = 90.99895
+offset_bottom = 51.154236
+rotation = 0.03886802
+theme_override_colors/default_color = Color(1, 0.34117648, 0.39215687, 1)
+theme_override_font_sizes/normal_font_size = 9
+text = "hi"

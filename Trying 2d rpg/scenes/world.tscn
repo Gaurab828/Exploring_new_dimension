@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://c2odgm6ug08ya" path="res://scenes/chest_6.tscn" id="17_kpybi"]
 [ext_resource type="Script" uid="uid://ba6s20kyruo6o" path="res://scripts/no_inside_chest.gd" id="17_rup4s"]
 [ext_resource type="PackedScene" uid="uid://gvhwxtqadh2g" path="res://scenes/chest_8.tscn" id="18_ctatt"]
+[ext_resource type="FontFile" uid="uid://dglsg6gaqlk4s" path="res://ThaleahFat.ttf" id="18_x2olw"]
 [ext_resource type="PackedScene" uid="uid://3hbg5rb0n7n2" path="res://scenes/chest_9.tscn" id="19_xgqkh"]
 [ext_resource type="PackedScene" uid="uid://dusihtc2ypfpx" path="res://scenes/chest_10.tscn" id="20_munwf"]
 [ext_resource type="Texture2D" uid="uid://clk7d0djfju4u" path="res://RF_Catacombs_v1.0/decorative.png" id="21_oo54l"]
@@ -35,6 +36,7 @@
 [ext_resource type="PackedScene" uid="uid://d3yt38r352nhe" path="res://scenes/npc_6.tscn" id="31_x2olw"]
 [ext_resource type="PackedScene" uid="uid://be8qbmt0fe144" path="res://scenes/player.tscn" id="34_4kbfs"]
 [ext_resource type="PackedScene" uid="uid://qvfcbwfppdgs" path="res://scenes/lost.tscn" id="35_f17e3"]
+[ext_resource type="PackedScene" uid="uid://do2b3xdvt7bg" path="res://scenes/win.tscn" id="37_817gm"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fh13f"]
 texture = ExtResource("22_kpybi")
@@ -17834,6 +17836,8 @@ offset_left = 578.0
 offset_top = 368.0
 offset_right = 604.0
 offset_bottom = 391.0
+theme_override_fonts/font = ExtResource("18_x2olw")
+theme_override_font_sizes/font_size = 26
 text = "1"
 horizontal_alignment = 1
 
@@ -17842,6 +17846,8 @@ offset_left = 708.0
 offset_top = 367.0
 offset_right = 734.0
 offset_bottom = 390.0
+theme_override_fonts/font = ExtResource("18_x2olw")
+theme_override_font_sizes/font_size = 26
 text = "2"
 horizontal_alignment = 1
 
@@ -17850,6 +17856,8 @@ offset_left = 835.0
 offset_top = 367.0
 offset_right = 861.0
 offset_bottom = 390.0
+theme_override_fonts/font = ExtResource("18_x2olw")
+theme_override_font_sizes/font_size = 26
 text = "3"
 horizontal_alignment = 1
 
@@ -17858,6 +17866,8 @@ offset_left = 962.0
 offset_top = 367.0
 offset_right = 988.0
 offset_bottom = 390.0
+theme_override_fonts/font = ExtResource("18_x2olw")
+theme_override_font_sizes/font_size = 26
 text = "4"
 horizontal_alignment = 1
 
@@ -17866,6 +17876,8 @@ offset_left = 1091.0
 offset_top = 368.0
 offset_right = 1117.0
 offset_bottom = 391.0
+theme_override_fonts/font = ExtResource("18_x2olw")
+theme_override_font_sizes/font_size = 26
 text = "5"
 horizontal_alignment = 1
 
@@ -17874,6 +17886,8 @@ offset_left = 1090.0
 offset_top = 489.0
 offset_right = 1116.0
 offset_bottom = 512.0
+theme_override_fonts/font = ExtResource("18_x2olw")
+theme_override_font_sizes/font_size = 26
 text = "10"
 horizontal_alignment = 1
 
@@ -17882,6 +17896,8 @@ offset_left = 963.0
 offset_top = 497.0
 offset_right = 989.0
 offset_bottom = 520.0
+theme_override_fonts/font = ExtResource("18_x2olw")
+theme_override_font_sizes/font_size = 26
 text = "9"
 horizontal_alignment = 1
 
@@ -17890,6 +17906,8 @@ offset_left = 835.0
 offset_top = 496.0
 offset_right = 861.0
 offset_bottom = 519.0
+theme_override_fonts/font = ExtResource("18_x2olw")
+theme_override_font_sizes/font_size = 26
 text = "8"
 horizontal_alignment = 1
 
@@ -17898,6 +17916,8 @@ offset_left = 707.0
 offset_top = 496.0
 offset_right = 733.0
 offset_bottom = 519.0
+theme_override_fonts/font = ExtResource("18_x2olw")
+theme_override_font_sizes/font_size = 26
 text = "7"
 horizontal_alignment = 1
 
@@ -17906,6 +17926,8 @@ offset_left = 579.0
 offset_top = 496.0
 offset_right = 605.0
 offset_bottom = 519.0
+theme_override_fonts/font = ExtResource("18_x2olw")
+theme_override_font_sizes/font_size = 26
 text = "6"
 horizontal_alignment = 1
 
@@ -17918,6 +17940,8 @@ offset_left = 525.0
 offset_top = 351.0
 offset_right = 565.0
 offset_bottom = 374.0
+theme_override_fonts/font = ExtResource("18_x2olw")
+theme_override_font_sizes/font_size = 26
 text = "1"
 horizontal_alignment = 1
 
@@ -17927,6 +17951,8 @@ offset_left = 524.0
 offset_top = 477.0
 offset_right = 564.0
 offset_bottom = 500.0
+theme_override_fonts/font = ExtResource("18_x2olw")
+theme_override_font_sizes/font_size = 26
 text = "6"
 horizontal_alignment = 1
 
@@ -17936,6 +17962,8 @@ offset_left = 652.0
 offset_top = 476.0
 offset_right = 692.0
 offset_bottom = 499.0
+theme_override_fonts/font = ExtResource("18_x2olw")
+theme_override_font_sizes/font_size = 26
 text = "7"
 horizontal_alignment = 1
 
@@ -17945,6 +17973,8 @@ offset_left = 780.0
 offset_top = 476.0
 offset_right = 820.0
 offset_bottom = 499.0
+theme_override_fonts/font = ExtResource("18_x2olw")
+theme_override_font_sizes/font_size = 26
 text = "8"
 horizontal_alignment = 1
 
@@ -17954,6 +17984,8 @@ offset_left = 908.0
 offset_top = 477.0
 offset_right = 948.0
 offset_bottom = 500.0
+theme_override_fonts/font = ExtResource("18_x2olw")
+theme_override_font_sizes/font_size = 26
 text = "9"
 horizontal_alignment = 1
 
@@ -17963,6 +17995,8 @@ offset_left = 1035.0
 offset_top = 477.0
 offset_right = 1075.0
 offset_bottom = 500.0
+theme_override_fonts/font = ExtResource("18_x2olw")
+theme_override_font_sizes/font_size = 26
 text = "10"
 horizontal_alignment = 1
 
@@ -17972,6 +18006,8 @@ offset_left = 653.0
 offset_top = 352.0
 offset_right = 693.0
 offset_bottom = 375.0
+theme_override_fonts/font = ExtResource("18_x2olw")
+theme_override_font_sizes/font_size = 26
 text = "2"
 horizontal_alignment = 1
 
@@ -17981,6 +18017,8 @@ offset_left = 781.0
 offset_top = 348.0
 offset_right = 821.0
 offset_bottom = 371.0
+theme_override_fonts/font = ExtResource("18_x2olw")
+theme_override_font_sizes/font_size = 26
 text = "3"
 horizontal_alignment = 1
 
@@ -17990,6 +18028,8 @@ offset_left = 908.0
 offset_top = 348.0
 offset_right = 948.0
 offset_bottom = 371.0
+theme_override_fonts/font = ExtResource("18_x2olw")
+theme_override_font_sizes/font_size = 26
 text = "4"
 horizontal_alignment = 1
 
@@ -17999,6 +18039,8 @@ offset_left = 1035.0
 offset_top = 349.0
 offset_right = 1075.0
 offset_bottom = 372.0
+theme_override_fonts/font = ExtResource("18_x2olw")
+theme_override_font_sizes/font_size = 26
 text = "5"
 horizontal_alignment = 1
 
@@ -18025,7 +18067,6 @@ position = Vector2(138, 555)
 [node name="character_shells" type="Node" parent="." unique_id=609686042]
 
 [node name="bunny" parent="character_shells" unique_id=346598918 instance=ExtResource("23_xgqkh")]
-visible = false
 position = Vector2(172, 533)
 
 [node name="gyutro" parent="character_shells" unique_id=1861926517 instance=ExtResource("24_fh13f")]
@@ -18057,6 +18098,7 @@ position = Vector2(89, 512)
 position = Vector2(168, 467)
 
 [node name="Label" type="Label" parent="." unique_id=1979530379]
+visible = false
 offset_left = 450.0
 offset_top = 287.0
 offset_right = 548.0
@@ -18070,6 +18112,7 @@ suggest you find your no
 within 5 boxes"
 
 [node name="Label2" type="Label" parent="." unique_id=1551509039]
+visible = false
 offset_left = 447.0
 offset_top = 504.0
 offset_right = 519.0
@@ -18081,15 +18124,21 @@ text = "Since you are first
 your no to find
  is one"
 
+[node name="win" parent="." unique_id=1589565921 instance=ExtResource("37_817gm")]
+visible = false
+position = Vector2(595, 437)
+
 [node name="Area2D" parent="." unique_id=943358620 instance=ExtResource("35_f17e3")]
+visible = false
 position = Vector2(509, 268)
 
 [node name="Label3" type="Label" parent="." unique_id=1302514722]
 visible = false
-offset_left = 53.0
-offset_top = 68.0
-offset_right = 1020.0
-offset_bottom = 410.0
-theme_override_font_sizes/font_size = 250
+offset_left = 105.0
+offset_top = 112.0
+offset_right = 1072.0
+offset_bottom = 454.0
+theme_override_fonts/font = ExtResource("18_x2olw")
+theme_override_font_sizes/font_size = 240
 text = "You lost"
 horizontal_alignment = 1

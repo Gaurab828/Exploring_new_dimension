@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://brtiu11agnb4x"]
+
+[ext_resource type="Texture2D" uid="uid://c65d4yk0486do" path="res://images.png" id="1_seejf"]
+
+[node name="dialouge" type="Control" unique_id=952451667]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 191.0
+offset_bottom = 184.0
+
+[node name="NinePatchRect" type="NinePatchRect" parent="." unique_id=1648800465]
+layout_mode = 0
+offset_top = -1.0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_seejf")

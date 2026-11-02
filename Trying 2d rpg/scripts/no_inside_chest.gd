@@ -6,6 +6,8 @@ func _ready() -> void:
 	a.shuffle()
 	for i in range(10):
 		label_list[i].text=str(a[i])
+		if a[i]==Why.player_id:
+			label_list[i].add_theme_color_override("font_color",Color("#d1d100"))
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:

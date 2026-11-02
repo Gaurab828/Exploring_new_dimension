@@ -1,0 +1,101 @@
+[gd_scene format=3 uid="uid://do2b3xdvt7bg"]
+
+[ext_resource type="Texture2D" uid="uid://xv1os5vqcyps" path="res://magic-electric-lightning-ball-animation-sprite_107791-19841.png" id="1_r4oei"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4otcc"]
+radius = 2.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_826fv"]
+atlas = ExtResource("1_r4oei")
+region = Rect2(0, 0, 148, 151)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iiocm"]
+atlas = ExtResource("1_r4oei")
+region = Rect2(148, 0, 148, 151)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yxbqr"]
+atlas = ExtResource("1_r4oei")
+region = Rect2(296, 0, 148, 151)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tylv2"]
+atlas = ExtResource("1_r4oei")
+region = Rect2(444, 0, 148, 151)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5vxan"]
+atlas = ExtResource("1_r4oei")
+region = Rect2(592, 0, 148, 151)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4826q"]
+atlas = ExtResource("1_r4oei")
+region = Rect2(0, 151, 148, 151)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_531e2"]
+atlas = ExtResource("1_r4oei")
+region = Rect2(148, 151, 148, 151)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d70ak"]
+atlas = ExtResource("1_r4oei")
+region = Rect2(296, 151, 148, 151)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_woh6y"]
+atlas = ExtResource("1_r4oei")
+region = Rect2(444, 151, 148, 151)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rx2gv"]
+atlas = ExtResource("1_r4oei")
+region = Rect2(592, 151, 148, 151)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4otcc"]
+animations = [{
+"frames": [],
+"loop": 1,
+"name": &"ntg",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_826fv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iiocm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yxbqr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tylv2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5vxan")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4826q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_531e2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d70ak")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_woh6y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rx2gv")
+}],
+"loop": 0,
+"name": &"win",
+"speed": 5.0
+}]
+
+[node name="Area2D" type="Area2D" unique_id=1589565921]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=790743712]
+shape = SubResource("CircleShape2D_4otcc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1516520507]
+position = Vector2(-9.536743e-07, 7.1525574e-07)
+scale = Vector2(0.7432433, 0.72847676)
+sprite_frames = SubResource("SpriteFrames_4otcc")
+animation = &"win"
+autoplay = "ntg"

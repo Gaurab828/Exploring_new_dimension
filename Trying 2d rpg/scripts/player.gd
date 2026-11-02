@@ -5,6 +5,7 @@ var z=[11,11,11,11,11,11,11,11,11,11]
 var a=str(player_id)
 @onready var lost_label=$"../Label3"
 @onready var lost_anim=$"../Area2D"
+@onready var win_anim=$"../win"
 var x=0
 @onready var label_list=[$"../no_inside_chest/Label",$"../no_inside_chest/Label0",$"../no_inside_chest/Label2",$"../no_inside_chest/Label3",$"../no_inside_chest/Label4",$"../no_inside_chest/Label5",$"../no_inside_chest/Label6",$"../no_inside_chest/Label7",$"../no_inside_chest/Label8",$"../no_inside_chest/Label9"]
 func _process(_delta: float) -> void:
@@ -14,11 +15,20 @@ func _process(_delta: float) -> void:
 				z[i]=i
 				x+=1
 				if label_list[i].text==a:
-					Why.player_id+=1
-					get_tree().change_scene_to_file("res://scenes/world.tscn")
+					win()
 	elif x==5:
 		x+=5
 		lost()
+func win()->void:
+	set_process(false)
+	Why.player_id+=1
+	win_anim.visible=true
+	win_anim.global_position=(global_position-Vector2(5,5))
+	$".".visible=false
+	get_node("../win/AnimatedSprite2D").play("win")
+	await get_node("../win/AnimatedSprite2D").animation_finished
+	get_tree().change_scene_to_file("res://scenes/world.tscn")
+
 func lost()->void:
 	lost_label.visible=true
 	lost_anim.visible=true
