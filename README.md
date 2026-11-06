@@ -4,7 +4,7 @@
 --How to play?
 A-W-S-D(left-up-down-right) and arrow keys(<- left,-> right, v down, ^ up) for movement and mouse or touch pad right click for opening chest. If you are using mobile devices I think connecting keyboard with cable will help.**
 --what is this?
-This is a experimental demo or environment to test a solution of a problem(100 prisoner problem) or for ease it is one of the p vs np solved question i think**
+This is an experimental demo or environment to test a solution of a problem(100 prisoner problem). So, if you guys are finding it hard to gather people like i did for conducting experiment for this problem I will suggest to checkout the game. Sole reason i build this game was to test the pattern which suggests a jump of whole margin in probability of success suggested by vertasium **
 --Why does the characters look wierd?
 Except for one i painted them in krita (shadow was not from krita)**
 --Why some sprites are small and some big?
