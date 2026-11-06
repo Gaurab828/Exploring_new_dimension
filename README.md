@@ -1,7 +1,7 @@
 <img width="574" height="303" alt="Screen Shot 2026-10-31 at 9 31 09 PM" src="https://github.com/user-attachments/assets/e7c84bc6-ef41-4fc1-98f6-d95fc7156e85" />
 <img width="754" height="325" alt="Screen Shot 2026-10-26 at 7 03 02 AM" src="https://github.com/user-attachments/assets/f50e8ccd-b628-43af-a3dd-6fed9474af92" />
 
---How to play?/n
+--How to play?
 A-W-S-D(left-up-down-right) and arrow keys(<- left,-> right, v down, ^ up) for movement and mouse or touch pad right click for opening chest. If you are using mobile devices I think connecting keyboard with cable will help.**
 --what is this?
 This is a experimental demo or environment to test a solution of a problem(100 prisoner problem) or for ease it is one of the p vs np solved question i think**
